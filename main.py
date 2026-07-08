@@ -1,7 +1,9 @@
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TOKEN = "8838803695:AAHaA9DAQwP7RKk-Zy818FajMXVxKKgN5RU"
+import os
+
+TOKEN = os.getenv("BOT_TOKEN")
 
 keyboard = [
     ["💡 Генерувати ідею"],
