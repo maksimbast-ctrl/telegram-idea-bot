@@ -53,7 +53,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif text == "📝 Генерувати назву":
         import random
 
-    names = [
+        names = [
         "IdeaStorm AI",
         "Viral Factory",
         "MindSpark",
@@ -68,7 +68,8 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(
         "📝 Варіанти назв:\n\n" +
-        "\n".join(random.sample(names, 5))
+        
+"\n".join(random.sample(names, 5))
     )
 
     elif text == "🏷️ Хештеги":
