@@ -51,7 +51,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(random.choice(ideas))
 
     elif text == "📝 Генерувати назву":
-    import random
+        import random
 
     names = [
         "IdeaStorm AI",
