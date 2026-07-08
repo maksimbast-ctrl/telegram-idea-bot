@@ -77,6 +77,46 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "#youtube\n#shorts\n#tiktok\n#viral\n#ideas"
         )
 
+    elif text == "🎬 Сценарій Shorts":
+        await update.message.reply_text(
+            "🎬 Напиши тему, і незабаром я згенерую сценарій Shorts."
+        )
+
+    elif text == "📜 Довге відео":
+        await update.message.reply_text(
+            "📜 Напиши тему, і я допоможу створити повний сценарій."
+        )
+
+    elif text == "🖼️ Промпт для обкладинки":
+        await update.message.reply_text(
+            "🖼️ Напиши тему, і я створю промпт для AI-генератора зображень."
+        )
+
+    elif text == "🎯 Опис для YouTube":
+        await update.message.reply_text(
+            "🎯 Напиши тему відео, і я згенерую SEO-опис."
+        )
+
+    elif text == "📅 Контент-план":
+        await update.message.reply_text(
+            "📅 Я допоможу скласти контент-план на 30 днів."
+        )
+
+    elif text == "📈 Аналіз ніші":
+        await update.message.reply_text(
+            "📈 Напиши нішу, яку хочеш проаналізувати."
+        )
+
+    elif text == "💰 Ідеї заробітку":
+        await update.message.reply_text(
+            "💰 Покажу добірку ідей для онлайн-заробітку."
+        )
+
+    elif text == "⚙️ Налаштування":
+        await update.message.reply_text(
+            "⚙️ Незабаром тут з'являться налаштування бота."
+        )
+    
     elif text == "⭐ PRO":
         await update.message.reply_text(
             "⭐ PRO скоро відкриється.\n\n"
