@@ -50,27 +50,27 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         import random
         await update.message.reply_text(random.choice(ideas))
 
-    elif text == "📝 Генерувати назву":
+
+    
+       elif text == "📝 Генерувати назву":
         import random
 
         names = [
-        "IdeaStorm AI",
-        "Viral Factory",
-        "MindSpark",
-        "Future Creator",
-        "Content Machine",
-        "Trend Hunter",
-        "Creative Engine",
-        "Next Viral",
-        "Idea Generator Pro",
-        "Smart Creator"
-    ]
+            "IdeaStorm AI",
+            "Viral Factory",
+            "MindSpark",
+            "Future Creator",
+            "Content Machine",
+            "Trend Hunter",
+            "Creative Engine",
+            "Next Viral",
+            "Smart Creator"
+        ]
 
-    await update.message.reply_text(
-        "📝 Варіанти назв:\n\n" +
-        
-"\n".join(random.sample(names, 5))
-    )
+        await update.message.reply_text(
+            "📝 Варіанти назв:\n\n" +
+            "\n".join(random.sample(names, 5))
+        ) 
 
     elif text == "🏷️ Хештеги":
         await update.message.reply_text("#youtube #shorts #tiktok #viral #ideas")
